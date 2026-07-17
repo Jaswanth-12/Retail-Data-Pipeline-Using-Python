@@ -8,6 +8,7 @@ A simple, modular data engineering project that processes retail sales data by c
 
 * **Multi-Source Data:** Combines PostgreSQL database records with external Parquet files.
 * **Modular Design:** Clear code structure separating database, ETL, and transformation functions.
+* **Logging:** Output logged to `logs/pipeline.log` for easy tracking.
 * **Testing:** Automated tests using `pytest`.
 
 ---
@@ -21,6 +22,8 @@ retail-data-pipeline/
 ├── data/
 │   ├── input/               # Raw input files (extra_data.parquet)
 │   └── output/              # Final processed data
+├── logs/
+│   └── pipeline.log         # Execution logs
 ├── pipeline/
 │   ├── database.py          # Database operations
 │   ├── etl.py               # Main ETL flow
